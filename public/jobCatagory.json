@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "https://i.ibb.co/crDmd52/accounts.png",
+    "postName": "UI/UX Designer",
+    "vacancy": 3
+  },
+  {
+    "icon": "https://i.ibb.co/v1JY3Nj/lightbulb.png",
+    "postName": "Frontend Developer",
+    "vacancy": 2
+  },
+  {
+    "icon": "https://i.ibb.co/YdjrdFy/market-analysis.png",
+    "postName": "Marketing Specialist",
+    "vacancy": 1
+  },
+  {
+    "icon": "https://i.ibb.co/Jj8HZRd/car-engine.png",
+    "postName": "Project Manager",
+    "vacancy": 2
+  }
+]
