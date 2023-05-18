@@ -1,0 +1,14 @@
+.feature-box {
+  height: 452px;
+  width: 668px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  margin: 10px;
+  position: relative;
+}
+.job-type {
+  border: 1px solid salmon;
+  border-radius: 8px;
+  height: 40px;
+  width: 100px;
+}

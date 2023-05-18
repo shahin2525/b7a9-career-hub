@@ -1,9 +1,9 @@
 import React from "react";
 
 const JobIcon = (props) => {
-  console.log(props);
+  // console.log(props);
   const { postName, vacancy, icon } = props.icon;
-  console.log(icon);
+  // console.log(icon);
 
   return (
     <div className="w-72 h-52 rounded-sm  bg-sky-50 mt-10">

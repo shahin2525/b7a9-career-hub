@@ -4,6 +4,9 @@
 }
 .height {
   height: 744px;
+  @media screen and (max-width: 576px) {
+    height: 950px;
+  }
 }
 .header-description {
   height: 350px;
