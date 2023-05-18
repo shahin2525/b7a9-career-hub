@@ -29,9 +29,9 @@ const FeaturedJobs = () => {
 
       <span
         onClick={handleData}
-        className="flex justify-center items-center mt-5 mb-5"
+        className="flex justify-center items-center mt-10 mb-7 bg-blue-500 h-16 w-40 rounded-lg ml-auto mr-auto"
       >
-        <button className="text-center">Show All</button>
+        <button className="">Show All</button>
       </span>
     </div>
   );
