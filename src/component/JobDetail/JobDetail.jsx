@@ -7,6 +7,7 @@ import {
   CurrencyDollarIcon,
   CalendarIcon,
 } from "@heroicons/react/24/solid";
+import { addToDb } from "../../utilities/fakedb";
 
 const JobDetail = () => {
   const job = useLoaderData();
@@ -20,7 +21,12 @@ const JobDetail = () => {
     phone,
     address,
     email,
+    id,
   } = job;
+  const handleApplyNow = (id) => {
+    console.log(id);
+    addToDb(id);
+  };
   return (
     <div>
       <div className="bg-slate-50 h-40 pb-14">
@@ -85,7 +91,10 @@ const JobDetail = () => {
               <span className="text-xl font-bold">Address: </span> {address}
             </h1>
           </div>
-          <span className="apply-btn-span  mt-5 ml-24">
+          <span
+            onClick={() => handleApplyNow(id)}
+            className="apply-btn-span  mt-5 ml-24"
+          >
             <button className=" w-40 h-10 mb-2">Apply now</button>
           </span>
         </div>

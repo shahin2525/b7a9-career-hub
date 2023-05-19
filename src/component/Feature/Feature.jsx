@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 const Feature = ({ feature }) => {
-  console.log(feature);
+  // console.log(feature);
   const {
     companyName,
     id,
