@@ -1,6 +1,6 @@
 import React from "react";
 import "./Feature.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   BeakerIcon,
   MapPinIcon,
@@ -18,6 +18,10 @@ const Feature = ({ feature }) => {
     salary,
     companyLogoUrl,
   } = feature;
+  const navigate = useNavigate();
+  const showViewDetails = () => {
+    navigate(`/detail/${id}`);
+  };
   return (
     <div className="feature-box">
       <img
@@ -42,11 +46,15 @@ const Feature = ({ feature }) => {
         <CurrencyDollarIcon className="h-6 w-6 text-gray-400" />
         <h1>salary: {salary}</h1>
       </div>
-      <Link>
-        <button className="ml-10 md:ml:10 pl-2 md:pl-8 mt-3 h-12 w-40 bg-blue-400 rounded-lg absolute bottom-2">
-          View-Details
-        </button>
-      </Link>
+
+      {/* <Link to={`/detail/${id}`}> */}
+      <button
+        onClick={showViewDetails}
+        className="ml-10 md:ml:10 pl-2 md:pl-8 mt-3 h-12 w-40 bg-blue-400 rounded-lg absolute bottom-2"
+      >
+        View-Details
+      </button>
+      {/* </Link> */}
     </div>
   );
 };

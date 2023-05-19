@@ -8,11 +8,14 @@ import Home from "./component/Home/Home.jsx";
 import Statistic from "./component/Statistic/Statistic.jsx";
 import AppliedJobs from "./component/AppliedJobs/AppliedJobs.jsx";
 import Blog from "./component/Blog/Blog.jsx";
+import JobDetail from "./component/JobDetail/JobDetail.jsx";
+import ErrorPage from "./component/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -29,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/detail/:jobId",
+        element: <JobDetail></JobDetail>,
+        loader: ({ params }) =>
+          fetch(`/featured.json`)
+            .then((res) => res.json())
+            .then((data) => data.find((item) => item.id == params.jobId)),
       },
     ],
   },
