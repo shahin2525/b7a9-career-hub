@@ -20,10 +20,9 @@ const appliedJobLoader = async () => {
       savedApplied.push(addedJob);
       // console.log(savedApplied);
     }
-    // }
-    // console.log(savedApplied);
-    return savedApplied;
   }
+  // console.log(savedApplied);
+  return savedApplied;
 };
 
 export default appliedJobLoader;

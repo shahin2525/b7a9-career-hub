@@ -1,0 +1,16 @@
+.saved-job-box {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 150px;
+  margin-right: 100px;
+  height: 300px;
+  width: 1320px;
+  display: flex;
+  /* justify-content: center; */
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  border: 2px solid rgb(225, 225, 209);
+  margin-bottom: 20px;
+}
