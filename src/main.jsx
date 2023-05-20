@@ -10,6 +10,8 @@ import AppliedJobs from "./component/AppliedJobs/AppliedJobs.jsx";
 import Blog from "./component/Blog/Blog.jsx";
 import JobDetail from "./component/JobDetail/JobDetail.jsx";
 import ErrorPage from "./component/ErrorPage.jsx";
+import appliedJobLoader from "./loaders/appliedJobLoader.js";
+import cartProductsLoader from "./loaders/appliedJobLoader.js";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,8 @@ const router = createBrowserRouter([
       {
         path: "/apply",
         element: <AppliedJobs></AppliedJobs>,
+        loader: appliedJobLoader,
+        // appliedJobLoader
       },
       {
         path: "/blog",

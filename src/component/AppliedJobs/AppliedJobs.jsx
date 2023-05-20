@@ -1,6 +1,10 @@
 import React from "react";
 
+import { useLoaderData } from "react-router-dom";
+
 const AppliedJobs = () => {
+  const featureJob = useLoaderData();
+  console.log(featureJob);
   return (
     <div>
       <div className="bg-slate-50 h-40 pb-14">
