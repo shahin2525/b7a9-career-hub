@@ -15,6 +15,7 @@ const AppliedJobs = () => {
         </h1>
       </div>
       <div className="saved-job">
+        {/* <button>ali baba</button> */}
         {savedJobs.map((savedJob) => (
           <SavedJob key={savedJob.id} savedJob={savedJob}></SavedJob>
         ))}

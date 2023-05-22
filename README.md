@@ -15,6 +15,8 @@
 
 - Gradually , I have developed JobApplied-route
 
+- I could not build remote job and onsite job filtering
+
 - Finally , I have developed Blog-route
 
 [My-live-site-link](https://transcendent-dolphin-994d60.netlify.app/apply)
