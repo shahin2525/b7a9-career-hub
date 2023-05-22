@@ -5,7 +5,7 @@ const Blog = () => {
     <div>
       <div className="bg-slate-50 h-40 pb-14">
         <h1 className="w-52 pt-14  h-10 text-3xl font-extrabold ml-auto mr-auto">
-          Question and Answer
+          Question
         </h1>
       </div>
       <p className="pl-4 pr-4 mb-4 mt-3">1 : When should you use context api</p>
